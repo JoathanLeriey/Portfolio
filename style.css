@@ -1,6 +1,85 @@
-@charset "utf-8";
+@charset "UTF-8";
 
+/*Configurações padrões*/
 *{
-    
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
+}
+
+
+/*Estilização do lado Esquerdo*/
+#esquerda{
+    position: fixed;
+    height: 100vh;
+    width: 20vw;
+
+    background-color: rgb(0, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#esquerda > nav > ul{
+    list-style: none;
+
+    margin-bottom: 150px;
+}
+
+#esquerda > nav > ul > li{
+    margin: 14px;
+}
+
+#esquerda > nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+
+    font-size: 16pt;
+}
+
+
+/*Estilização do lado Direito*/
+#direita{
+    margin-left: 20vw;
+    background-color: yellow;
+
+}
+
+#inicio{
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-left: 20%;
+
+    background-color: blueviolet;
+}
+
+#sobre{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgb(85, 237, 85);
+}
+
+#tecnologias{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: cadetblue;
+}
+
+#projetos{
+    height: 100vh;
+
+    background-color: rgb(197, 131, 83);
 }
