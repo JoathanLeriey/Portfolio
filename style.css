@@ -35,8 +35,19 @@ body{
     background-color: #2b0260;
 
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: flex-end;
+
+
+    box-shadow: 8px -20px 2px 4px rgb(203, 144, 239);
+}
+
+#esquerda > div#foto{
+    padding: 50px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 100px;
 }
 
 #esquerda > nav > ul{
@@ -51,9 +62,11 @@ body{
 
 #esquerda > nav > ul > li > a{
     text-decoration: none;
-    color: white;
+    color: rgb(236, 234, 234);
 
     font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 
