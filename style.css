@@ -169,6 +169,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 #projetos > h1, h2{
@@ -212,4 +213,15 @@ p{
     padding: 10px;
 
     border-radius: 5px 5px 10px 5px;
+}
+
+@media (max-width: 900px){
+    #esquerda{
+        display: none;
+    }
+
+    #direita{
+        margin-left: 0vw;
+        height: 100%;
+    }
 }
