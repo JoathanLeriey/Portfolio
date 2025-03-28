@@ -1,10 +1,28 @@
 @charset "UTF-8";
 
+@font-face { /*fonte dos parágrafos*/
+    font-family: 'F25';
+    src: url(fonts/F25_Bank_Printer.ttf) format('truetype');
+}
+
+@font-face { /*fonte dos títulos*/
+    font-family: 'Coffee';
+    src: url(fonts/Kenyan\ Coffee\ Rg.otf) format('opentype');
+}
+
 /*Configurações padrões*/
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+}
+
+
+body{
+    background: url(img/1.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 
@@ -14,7 +32,7 @@
     height: 100vh;
     width: 20vw;
 
-    background-color: rgb(0, 255, 255);
+    background-color: #2b0260;
 
     display: flex;
     justify-content: center;
@@ -33,7 +51,7 @@
 
 #esquerda > nav > ul > li > a{
     text-decoration: none;
-    color: black;
+    color: white;
 
     font-size: 16pt;
 }
@@ -42,8 +60,21 @@
 /*Estilização do lado Direito*/
 #direita{
     margin-left: 20vw;
-    background-color: yellow;
 
+}
+
+h1{
+    font-size: 30pt;
+    font-family: 'Coffee';
+
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: 'F25';
 }
 
 #inicio{
@@ -53,9 +84,17 @@
     flex-direction: column;
     justify-content: center;
     
-    padding-left: 20%;
+    padding-left: 30%;
+}
 
-    background-color: blueviolet;
+#inicio > h1{
+    font-size: 50pt;
+}
+
+#inicio > h2{
+    margin-top: 10px;
+    margin-left: 30px;
+
 }
 
 #sobre{
@@ -65,7 +104,23 @@
     flex-direction: column;
     justify-content: center;
 
-    background-color: rgb(85, 237, 85);
+    padding: 70px;
+}
+
+#sobre > p{
+    margin: 10px;
+    font-size: 11pt;
+
+}
+
+#sobre > p > a > img{
+    width: 50px;
+}
+
+#sobre > #iconDireita{
+    text-align: end;
+
+    width: 60vw;
 }
 
 #tecnologias{
@@ -75,11 +130,73 @@
     flex-direction: column;
     justify-content: center;
 
-    background-color: cadetblue;
+    margin-left: 15vw;
+
+}
+
+#tecnologias > h1{
+    font-size: 50pt;
+   
+}
+
+#tecnologias > h2{
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+
+#tecnologias > p > img{
+    width: 60px;
 }
 
 #projetos{
     height: 100vh;
 
-    background-color: rgb(197, 131, 83);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#projetos > h1, h2{
+    
+    margin-left: 5vw;
+}
+
+#areaProjetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#areaProjetos > div{
+    background-color: rgba(228, 228, 228, 0.902);
+    margin: 10px;
+    padding: 10px;
+
+    box-shadow: 7px 6px 2px 0px rgba(0, 0, 0, 0.628);
+}
+
+#areaProjetos > div > p > img{
+    margin-bottom: 20px;
+
+    box-shadow: -3px 4px 1px 0px rgba(0, 0, 0, 0.628);
+}
+
+.paragrafoProjetors{
+    margin: 10px;
+    font-size: 11pt;
+}
+
+#areaProjetos > div > a{
+    text-decoration: none;
+
+    color: white;
+    background-color: rgb(14, 4, 80);
+
+    padding: 10px;
+
+    border-radius: 5px 5px 10px 5px;
 }
